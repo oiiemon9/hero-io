@@ -1,0 +1,506 @@
+[
+  {
+    "image": "https://play-lh.googleusercontent.com/BmUViDVOKNJe0GYJe22hsr7juFndRVbvr1fGmHGXqHfJjNAXjd26bfuGRQpVrpJ6YbA",
+    "title": "TikTok",
+    "companyName": "ByteDance",
+    "id": 1,
+    "description": "TikTok is a dynamic and engaging platform that has transformed the way people create and consume short-form video content. Designed for creative expression, it allows users to capture, edit, and share videos ranging from 15 seconds to 3 minutes, using an extensive library of music, sound effects, and visual filters. From dance challenges and comedic sketches to educational tutorials and DIY projects, TikTok caters to every interest and hobby, creating a diverse and vibrant global community. Its algorithm is finely tuned to user behavior, delivering personalized feeds known as the For You Page, which ensures that viewers are consistently presented with content that matches their tastes. The app’s interactive features, including duets, stitches, live streaming, and comment engagement, make content consumption a participatory experience. TikTok’s blend of entertainment, community, and creative freedom has made it one of the fastest-growing social media platforms in the world, appealing to users of all ages and fostering viral trends that influence culture globally.",
+    "size": 180,
+    "reviews": 52000000,
+    "ratingAvg": 4.5,
+    "downloads": 3000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1200000 },
+      { "name": "2 star", "count": 1500000 },
+      { "name": "3 star", "count": 4000000 },
+      { "name": "4 star", "count": 9000000 },
+      { "name": "5 star", "count": 37300000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/VRMWkE5p3CkWhJs6nv-9ZsLAs1QOg5ob1_3qg-rckwYW7yp1fMrYZqnEFpk0IoVP4LM=w600-h300-pc0xffffff-pd",
+    "title": "Instagram",
+    "companyName": "Meta Platforms",
+    "id": 2,
+    "description": "Instagram is a visually driven social media platform that empowers users to share their lives through photos, videos, and stories. With an emphasis on creativity and aesthetic presentation, the app provides a range of tools, including filters, stickers, text overlays, and interactive polls, enabling users to enhance their visual content. Instagram also supports Reels, a short-form video feature designed to compete with other video platforms, making it easy for creators to gain exposure and grow audiences. Beyond individual expression, Instagram fosters community building by allowing users to follow friends, brands, and public figures, engage through likes and comments, and participate in collaborative trends. Its Explore tab provides tailored content recommendations, ensuring users are continuously discovering fresh ideas, products, and experiences. For businesses, Instagram serves as a robust marketing platform, offering shopping features, promotional tools, and insights to connect with potential customers, all while maintaining an aesthetically cohesive environment that prioritizes storytelling and visual engagement.",
+    "size": 210,
+    "reviews": 49000000,
+    "ratingAvg": 4.3,
+    "downloads": 2500000000,
+    "ratings": [
+      { "name": "1 star", "count": 1000000 },
+      { "name": "2 star", "count": 1300000 },
+      { "name": "3 star", "count": 3500000 },
+      { "name": "4 star", "count": 9000000 },
+      { "name": "5 star", "count": 34200000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN",
+    "title": "WhatsApp Messenger",
+    "companyName": "Meta Platforms",
+    "id": 3,
+    "description": "WhatsApp Messenger is a leading communication platform that combines simplicity, speed, and security. With end-to-end encryption, it ensures that messages, calls, and shared media are secure and private between users. The app supports text messaging, voice and video calls, group chats, and multimedia sharing, making it versatile for both personal and professional communication. WhatsApp also includes features such as status updates, document sharing, location sharing, and broadcast lists, enabling users to stay connected in multiple ways. Its cross-platform functionality ensures seamless communication across different devices, while the lightweight design and minimal interface make it accessible even on slower networks. For businesses, WhatsApp Business provides specialized tools like automated messages, catalog displays, and customer interaction management, allowing enterprises to maintain direct and meaningful engagement with clients. WhatsApp’s commitment to privacy, combined with its robust set of features, has established it as one of the most trusted messaging apps worldwide.",
+    "size": 160,
+    "reviews": 48000000,
+    "ratingAvg": 4.6,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 800000 },
+      { "name": "2 star", "count": 1100000 },
+      { "name": "3 star", "count": 2800000 },
+      { "name": "4 star", "count": 7000000 },
+      { "name": "5 star", "count": 36400000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/6MtUcsS5i95q92P6NbHTGzJT6hs6cJANaMHXfW5nco5_hDOnF1AC3A5lgH3Ik3MARAry",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "id": 4,
+    "description": "YouTube is the world’s largest video-sharing platform, enabling users to watch, create, and interact with a vast array of content. It hosts millions of videos covering every imaginable topic, from music and movies to educational tutorials and personal vlogs. Creators can build audiences, monetize content, and share their perspectives with a global community, while viewers can discover new content through personalized recommendations and curated playlists. The platform also supports live streaming, premieres, and community posts, providing diverse engagement options. YouTube’s sophisticated algorithm ensures that users receive relevant content tailored to their interests, while its comment and sharing features encourage interaction and discussion. Additionally, YouTube offers YouTube Shorts, a short-form video format, to capture the growing demand for quick, engaging videos. With accessibility on desktop, mobile, and smart TVs, YouTube has become an indispensable part of digital entertainment, learning, and content creation for millions of people worldwide.",
+    "size": 240,
+    "reviews": 72000000,
+    "ratingAvg": 4.4,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 2500000 },
+      { "name": "2 star", "count": 3000000 },
+      { "name": "3 star", "count": 5000000 },
+      { "name": "4 star", "count": 10000000 },
+      { "name": "5 star", "count": 51500000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/KCMTYuiTrKom4Vyf0G4foetVOwhKWzNbHWumV73IXexAIy5TTgZipL52WTt8ICL-oIo",
+    "title": "Facebook",
+    "companyName": "Meta Platforms",
+    "id": 5,
+    "description": "Facebook is a comprehensive social networking platform that connects people globally, allowing them to share updates, photos, videos, and events with friends, family, and communities. Users can join groups based on interests, follow pages of celebrities and brands, and engage with content through likes, comments, and shares. Its News Feed aggregates updates in real-time, providing a curated stream of information relevant to each user. Facebook’s Messenger integration facilitates private communication, while features like Marketplace, Events, and Live streaming enable commerce, community participation, and interactive experiences. Businesses leverage Facebook’s robust advertising platform to reach specific audiences, track engagement, and promote products or services effectively. Over the years, Facebook has evolved into a versatile hub for social interaction, entertainment, and information, continually adding features to enhance connectivity and user engagement while maintaining a balance between personal sharing and public content discovery.",
+    "size": 250,
+    "reviews": 61000000,
+    "ratingAvg": 4.2,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 2000000 },
+      { "name": "2 star", "count": 2500000 },
+      { "name": "3 star", "count": 5500000 },
+      { "name": "4 star", "count": 11000000 },
+      { "name": "5 star", "count": 40000000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/ZU9cSsyIJZo6Oy7HTHiEPwZg0m2Crep-d5ZrfajqtsH-qgUXSqKpNA2FpPDTn-7qA5Q",
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "id": 6,
+    "description": "Telegram is a cloud-based messaging app that emphasizes speed, security, and versatility. Its end-to-end encryption ensures private communication, while its cloud-based storage allows users to access messages, files, and media across multiple devices seamlessly. Telegram supports text messages, voice calls, video calls, group chats, and channels, catering to both individual and community communication. Users can send files of virtually any type, making it suitable for professional collaboration as well as casual chatting. The app includes features like bots, polls, scheduled messages, and secret chats that self-destruct after a specified period, adding convenience and privacy. Telegram also supports large group communities with up to 200,000 members, making it a powerful tool for social networking and business communication. Its lightweight interface, customization options, and advanced security measures have contributed to its popularity as a flexible alternative to other messaging platforms, appealing to users who value privacy, efficiency, and functionality.",
+    "size": 170,
+    "reviews": 12000000,
+    "ratingAvg": 4.7,
+    "downloads": 1500000000,
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 400000 },
+      { "name": "3 star", "count": 900000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 8400000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/KxeSAjPTKliCErbivNiXrd6cTwfbqUJcbSRPe_IBVK_YmwckfMRS1VIHz-5cgT09yMo",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "id": 7,
+    "description": "Snapchat is a multimedia messaging app that emphasizes ephemeral content and creative expression. Users can send photos, videos, and text messages that disappear after being viewed, promoting spontaneous and authentic communication. Snapchat offers a variety of interactive features, including lenses, filters, stickers, Bitmojis, and augmented reality effects that make messages more engaging. Its Stories feature allows users to share moments with friends for 24 hours, creating a personal narrative visible to select audiences. Snapchat also provides Discover, a space for curated content from publishers, celebrities, and influencers, as well as Spotlight, a platform for user-generated videos to go viral. With video and audio calling capabilities, as well as group chat functionality, Snapchat maintains a versatile communication environment. Its playful and innovative features encourage creativity while fostering connections among friends and communities worldwide.",
+    "size": 190,
+    "reviews": 22000000,
+    "ratingAvg": 4.2,
+    "downloads": 1500000000,
+    "ratings": [
+      { "name": "1 star", "count": 700000 },
+      { "name": "2 star", "count": 1000000 },
+      { "name": "3 star", "count": 2500000 },
+      { "name": "4 star", "count": 4000000 },
+      { "name": "5 star", "count": 13800000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/eN0IexSzxpUDMfFtm-OyM-nNs44Y74Q3k51bxAMhTvrTnuA4OGnTi_fodN4cl-XxDQc=w240-h480-rw",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "id": 8,
+    "description": "Spotify is a music streaming platform that offers access to millions of songs, podcasts, and playlists from artists and creators around the world. Its intuitive interface allows users to search for music by genre, artist, album, or mood, while personalized playlists and recommendations help discover new content. Spotify supports offline playback, collaborative playlists, and high-quality audio streaming, catering to casual listeners and audiophiles alike. Podcast listeners benefit from exclusive shows and the ability to follow favorite creators. Premium subscriptions provide an ad-free experience, unlimited skips, and improved sound quality. Spotify also enables social sharing of playlists and favorite tracks, allowing friends to connect through music. With cross-platform support on mobile, desktop, and smart devices, Spotify has become an essential tool for entertainment, music discovery, and podcast consumption worldwide.",
+    "size": 220,
+    "reviews": 27000000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 900000 },
+      { "name": "2 star", "count": 1200000 },
+      { "name": "3 star", "count": 2000000 },
+      { "name": "4 star", "count": 4500000 },
+      { "name": "5 star", "count": 18400000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/A-Rnrh0J7iKmABskTonqFAANRLGTGUg_nuE4PEMYwJavL3nPt5uWsU2WO_DSgV_mOOM",
+    "title": "Twitter (X)",
+    "companyName": "X Corp",
+    "id": 9,
+    "description": "Twitter, now branded as X, is a social networking platform designed for real-time communication, news, and engagement. Users can post short messages, called tweets, and engage with content through retweets, likes, and comments. Twitter enables people to follow friends, influencers, journalists, and brands, fostering the exchange of ideas, opinions, and news updates instantly. The platform’s trending topics and hashtags highlight popular conversations and events, allowing users to participate in global discussions. Twitter also supports multimedia content, polls, and live streaming, adding variety to user engagement. Businesses and creators use the platform for brand promotion, audience interaction, and trend analysis. Its fast-paced, concise communication style makes Twitter an essential tool for staying informed, connected, and socially active in the digital world.",
+    "size": 230,
+    "reviews": 35000000,
+    "ratingAvg": 4.1,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500000 },
+      { "name": "2 star", "count": 2000000 },
+      { "name": "3 star", "count": 4000000 },
+      { "name": "4 star", "count": 7000000 },
+      { "name": "5 star", "count": 20500000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/Kf8WTct65hFJxBUDm5E-EpYsiDoLQiGGbnuyP6HBNax43YShXti9THPon1YKB6zPYpA",
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "id": 10,
+    "description": "Google Maps is an essential navigation and mapping tool that provides accurate directions, traffic updates, and location information. Users can find the best routes for driving, walking, cycling, and public transportation, while real-time traffic data helps avoid congestion. The platform also offers detailed information about businesses, landmarks, and points of interest, including reviews, photos, and contact details. Users can save favorite locations, explore local attractions, and even contribute reviews and photos. Google Maps integrates satellite imagery, street views, and indoor maps to enhance navigation and exploration. Features like live location sharing, offline maps, and route customization make it a reliable companion for daily commutes, travel planning, and discovering new places, providing an intuitive and interactive map experience for millions worldwide.",
+    "size": 150,
+    "reviews": 28000000,
+    "ratingAvg": 4.6,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 600000 },
+      { "name": "2 star", "count": 700000 },
+      { "name": "3 star", "count": 1500000 },
+      { "name": "4 star", "count": 4000000 },
+      { "name": "5 star", "count": 21200000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/6CFQQ0b9r5fzF1v6f0gIirWsOGL7sGWkJifuUQxxhbCMcBx5aSG_cNXpjDKDn5c1jwjq",
+    "title": "Pinterest",
+    "companyName": "Pinterest Inc.",
+    "id": 11,
+    "description": "Pinterest is a creative discovery platform that enables users to explore ideas for home décor, fashion, recipes, and lifestyle inspiration. Users can browse through a vast collection of images, save favorites to personal boards, and organize ideas for future reference. Pinterest encourages creativity by allowing users to create vision boards, plan projects, and discover trends in various domains. The platform also supports business accounts, enabling brands to reach targeted audiences and showcase products through visually appealing pins. Personalized recommendations based on user interests help discover new ideas, while collaborative boards allow multiple users to contribute and plan together. Pinterest’s combination of creativity, organization, and discovery makes it a unique platform for inspiration, planning, and social engagement.",
+    "size": 160,
+    "reviews": 11000000,
+    "ratingAvg": 4.7,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 1400000 },
+      { "name": "5 star", "count": 8500000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI",
+    "title": "Netflix",
+    "companyName": "Netflix Inc.",
+    "id": 12,
+    "description": "Netflix is a leading streaming service that offers a vast library of movies, TV shows, documentaries, and original content across genres. Users can watch high-quality video content on demand, with options for offline downloads and personalized recommendations based on viewing habits. Netflix’s user-friendly interface makes it easy to explore trending content, new releases, and curated categories. Features like multiple user profiles, parental controls, and watchlists ensure a tailored experience for households. Netflix originals, spanning series, films, and documentaries, have garnered global recognition, attracting audiences with compelling storytelling and diverse narratives. The platform’s accessibility on mobile, desktop, smart TVs, and gaming consoles ensures entertainment is always within reach, making it a go-to service for media consumption and leisure worldwide.",
+    "size": 250,
+    "reviews": 22000000,
+    "ratingAvg": 4.4,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 900000 },
+      { "name": "2 star", "count": 1000000 },
+      { "name": "3 star", "count": 2000000 },
+      { "name": "4 star", "count": 4000000 },
+      { "name": "5 star", "count": 14100000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/MO4jVMbqskWrBD7BDUiKkymLPDMlSFjnEE-JTCigWv6UcoENgAkSKr8bs0IvPs8Twv8",
+    "title": "CapCut",
+    "companyName": "Bytedance Pte. Ltd.",
+    "id": 13,
+    "description": "CapCut is a versatile video editing application designed for users who want professional-quality editing on mobile devices. It provides an intuitive interface with tools for trimming, cutting, splitting, and merging video clips seamlessly. Users can enhance their content with effects, transitions, stickers, text, and soundtracks, making it ideal for social media posts, short videos, and creative projects. CapCut supports high-resolution exports, slow-motion effects, and advanced features like keyframe animation and chroma key. Integration with popular platforms such as TikTok allows creators to directly share content with audiences. CapCut empowers both beginners and experienced editors to create compelling, visually appealing videos without the need for complex desktop software, making video creation accessible, fun, and professional.",
+    "size": 190,
+    "reviews": 12000000,
+    "ratingAvg": 4.6,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 400000 },
+      { "name": "3 star", "count": 900000 },
+      { "name": "4 star", "count": 2100000 },
+      { "name": "5 star", "count": 8300000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/ZyWNGIfzUyoajtFcD7NhMksHEZh37f-MkHVGr5Yfefa-IX7yj9SMfI82Z7a2wpdKCA",
+    "title": "Google Photos",
+    "companyName": "Google LLC",
+    "id": 14,
+    "description": "Google Photos is a cloud-based photo and video management service that offers automatic backup, organization, and sharing. Users can store unlimited high-quality photos and videos, access them across devices, and easily search using intelligent categorization, facial recognition, and location data. Google Photos allows users to create albums, collages, animations, and movies from their media collection, providing creative tools for personal expression. The platform also supports sharing with friends and family, collaborative albums, and private links for secure distribution. Advanced AI features enable automatic enhancements, photo editing, and memory highlights, helping users relive their best moments effortlessly. Google Photos combines convenience, storage, and intelligent management, making it a leading solution for digital media organization and preservation.",
+    "size": 190,
+    "reviews": 20000000,
+    "ratingAvg": 4.5,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 800000 },
+      { "name": "2 star", "count": 900000 },
+      { "name": "3 star", "count": 1700000 },
+      { "name": "4 star", "count": 4000000 },
+      { "name": "5 star", "count": 13400000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw",
+    "title": "LinkedIn",
+    "companyName": "Microsoft Corporation",
+    "id": 15,
+    "description": "LinkedIn is the premier professional networking platform that helps individuals and businesses connect, share knowledge, and grow careers. Users can create detailed professional profiles, showcase skills, experiences, and accomplishments, and connect with colleagues, recruiters, and industry leaders. LinkedIn facilitates job searching, professional development, and industry news updates through posts, articles, and recommendations. The platform also supports company pages, advertising, and recruitment solutions for businesses, enabling targeted outreach to professionals. LinkedIn Learning offers courses and tutorials to enhance skills and stay competitive in evolving job markets. By blending networking, learning, and professional engagement, LinkedIn empowers users to advance careers, expand influence, and explore opportunities worldwide.",
+    "size": 230,
+    "reviews": 10000000,
+    "ratingAvg": 4.4,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 400000 },
+      { "name": "3 star", "count": 800000 },
+      { "name": "4 star", "count": 1800000 },
+      { "name": "5 star", "count": 6900000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/yZsmiNjmji3ZoOuLthoVvptLB9cZ0vCmitcky4OUXNcEFV3IEQkrBD2uu5kuWRF5_ERA",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications",
+    "id": 16,
+    "description": "Zoom is a leading video conferencing and communication platform that facilitates virtual meetings, webinars, and collaboration. Users can host or join video calls with high-quality audio and video, share screens, and interact through chat and reactions. Zoom supports large-scale meetings with features like breakout rooms, polling, recording, and scheduling, catering to corporate, educational, and personal use. Its integration with calendars, productivity tools, and third-party apps streamlines workflows and enhances collaboration. Zoom also offers secure connections and encryption to protect user data. With cross-platform compatibility on desktops, mobile devices, and web browsers, Zoom has become essential for remote work, online education, and virtual social interactions, enabling seamless communication regardless of location.",
+    "size": 280,
+    "reviews": 17000000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 600000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 1200000 },
+      { "name": "4 star", "count": 3000000 },
+      { "name": "5 star", "count": 11400000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/YlsjgA1pFEUqNaypaxE5ajushTBOt8IxVk_UEqzaXT7_n3JDgFq6KgtuE8tPBpvaCntB",
+    "title": "Reddit",
+    "companyName": "Reddit Inc.",
+    "id": 17,
+    "description": "Reddit is a community-driven platform that allows users to explore content, discussions, and news across a wide variety of topics. Structured into thousands of subreddits, Reddit provides spaces for focused conversations on hobbies, technology, gaming, culture, and more. Users can submit posts, share links, ask questions, and comment, fostering interactive and dynamic discussions. The platform emphasizes upvoting and downvoting, ensuring quality content rises to prominence. Reddit also supports AMAs (Ask Me Anything), live discussions, and multimedia sharing, engaging users in real-time interactions. With its diverse communities, Reddit offers both entertainment and valuable information, making it a unique platform where individuals can discover, learn, and connect globally.",
+    "size": 200,
+    "reviews": 10000000,
+    "ratingAvg": 4.2,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 500000 },
+      { "name": "3 star", "count": 900000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 6100000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/1Ns1T_qN0pEXMvZeZ5lQNAR8z4blP7ce2J2Nn5doXvt2T1g_W7VMORdWHaApkOooupI",
+    "title": "Amazon Shopping",
+    "companyName": "Amazon Mobile LLC",
+    "id": 18,
+    "description": "Amazon Shopping is a comprehensive e-commerce platform that allows users to browse, purchase, and track millions of products across various categories. Users benefit from detailed product descriptions, customer reviews, ratings, and images to make informed decisions. Amazon provides features like one-click ordering, wish lists, personalized recommendations, and fast delivery options, including Prime services. The app integrates secure payment methods, order tracking, and easy returns, ensuring a smooth shopping experience. Amazon Shopping also offers exclusive deals, seasonal promotions, and curated selections tailored to user preferences. With its extensive product range, reliable service, and user-friendly interface, Amazon remains a leading choice for online shopping globally.",
+    "size": 260,
+    "reviews": 24000000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 900000 },
+      { "name": "2 star", "count": 1000000 },
+      { "name": "3 star", "count": 1800000 },
+      { "name": "4 star", "count": 4200000 },
+      { "name": "5 star", "count": 16100000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/ifCatuvGN6UAItrq2ApI0zFm7G1IOciP9jmQ_RXT7GReVVbpK0FEuZSy8sUecdw7hG0",
+    "title": "Spotify Lite",
+    "companyName": "Spotify AB",
+    "id": 19,
+    "description": "Spotify Lite is a compact version of the popular music streaming platform, designed to consume less data and storage while providing essential music discovery and playback features. Users can browse curated playlists, stream songs, and explore new artists without heavy performance requirements. The app maintains a simplified interface, focusing on ease of use and speed, ideal for users on low-end devices or slower network connections. Spotify Lite supports basic playback controls, playlist management, and offline listening for selected tracks. Despite its lightweight design, the app retains Spotify’s core functionality, allowing users to enjoy personalized recommendations and maintain an engaging music experience on mobile devices with minimal resource consumption.",
+    "size": 80,
+    "reviews": 5000000,
+    "ratingAvg": 4.3,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 1100000 },
+      { "name": "5 star", "count": 3150000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/qWPdFvazDmlmJospzE3zESXvwJx7SKpgjO3BNIYyD21sfiXjsnjz8t822eBiAYWSo7Yt",
+    "title": "Gmail",
+    "companyName": "Google LLC",
+    "id": 20,
+    "description": "Gmail is a robust and reliable email service that simplifies communication, organization, and productivity. It provides a clean and intuitive interface, advanced search capabilities, and intelligent filters to manage emails efficiently. Users can send and receive messages, attach files, integrate with Google Workspace apps, and organize emails using labels and categories. Gmail’s smart features, such as automated replies, priority inbox, and spam protection, enhance efficiency and security. The platform also supports multiple accounts, offline access, and synchronization across devices. With its combination of reliability, integration, and user-friendly design, Gmail has become an essential communication tool for personal, academic, and professional use worldwide.",
+    "size": 180,
+    "reviews": 30000000,
+    "ratingAvg": 4.6,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 800000 },
+      { "name": "2 star", "count": 900000 },
+      { "name": "3 star", "count": 2000000 },
+      { "name": "4 star", "count": 4000000 },
+      { "name": "5 star", "count": 22300000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/5wVn4qP4EIQV4BU2nzx2oDGeyDFU3Id2zlchCDNpqEGzyZssojerAql5ybq5RS59Ve0y=w240-h480-rw",
+    "title": "Disney+",
+    "companyName": "Disney",
+    "id": 21,
+    "description": "Disney+ is a streaming service that offers a vast library of content from Disney, Pixar, Marvel, Star Wars, and National Geographic. The platform provides high-quality video streaming, personalized recommendations, and curated collections to suit diverse viewing preferences. Users can enjoy family-friendly movies, original series, documentaries, and blockbuster franchises, all accessible on-demand. Disney+ also supports multiple profiles, parental controls, offline downloads, and seamless cross-device synchronization. The intuitive interface allows easy browsing, creating watchlists, and exploring trending content. By combining nostalgia, innovation, and exclusive content, Disney+ appeals to viewers of all ages, making it a leading destination for entertainment and immersive storytelling worldwide.",
+    "size": 240,
+    "reviews": 15000000,
+    "ratingAvg": 4.6,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 2500000 },
+      { "name": "5 star", "count": 12000000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/jKU64njy8urP89V1O63eJxMtvWjDGETPlHVIhDv9WZAYzsSxRWyWZkUlBJZj_HbkHA",
+    "title": "Microsoft Teams",
+    "companyName": "Microsoft Corporation",
+    "id": 22,
+    "description": "Microsoft Teams is a collaborative platform that integrates chat, video conferencing, file sharing, and productivity tools into a unified workspace. Designed for businesses, educational institutions, and remote teams, it enables seamless communication, project management, and workflow optimization. Users can create channels, schedule meetings, share files, and integrate third-party applications to streamline operations. Teams supports group collaboration with video calls, live events, threaded conversations, and task tracking, enhancing team efficiency and engagement. The platform’s security features, including data encryption and compliance standards, ensure safe communication and content management. Microsoft Teams fosters connectivity, productivity, and collaboration, making it an indispensable tool for modern workplaces and organizations worldwide.",
+    "size": 280,
+    "reviews": 9000000,
+    "ratingAvg": 4.3,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 1800000 },
+      { "name": "5 star", "count": 5900000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/IHP09g8h1fer5igtfqR5SkmZfZwiXwVJUmU2dG1xOOAjpypFIK3l7iKe5rf86Rb9aTk=s256-rw",
+    "title": "Uber",
+    "companyName": "Uber Technologies",
+    "id": 23,
+    "description": "Uber is a ride-hailing app that revolutionizes urban mobility by connecting riders with nearby drivers efficiently and securely. Users can request rides, track driver locations in real-time, and choose from multiple service options, including standard, premium, or shared rides. Uber provides fare estimates, in-app payments, and detailed driver ratings to ensure transparency and safety. Beyond transportation, Uber expands services to include food delivery through Uber Eats and freight solutions, creating a comprehensive mobility ecosystem. The app’s convenience, real-time tracking, and user-friendly interface make commuting simpler and faster, while rating systems and customer support enhance trust and reliability. Uber continues to redefine transportation experiences globally through technology-driven solutions.",
+    "size": 150,
+    "reviews": 14000000,
+    "ratingAvg": 4.4,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 500000 },
+      { "name": "3 star", "count": 1200000 },
+      { "name": "4 star", "count": 3000000 },
+      { "name": "5 star", "count": 8800000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/aD_yV7NdU8txkDPV1NU557BjnvZf-D6Ip8Cn7xhdieHgMLGt1FTQXlBBgH1jTNhhnw1v=w240-h480-rw",
+    "title": "DoorDash",
+    "companyName": "DoorDash, Inc.",
+    "id": 24,
+    "description": "DoorDash is an on-demand food delivery platform that connects users with local restaurants, grocery stores, and merchants. The app allows customers to browse menus, place orders, and track deliveries in real-time, providing a convenient and efficient dining experience. DoorDash offers features such as contactless delivery, scheduled orders, and curated recommendations based on preferences and past orders. Customers can leave ratings and reviews, ensuring quality service and accountability. The platform also supports subscription services like DashPass, providing benefits such as reduced delivery fees and exclusive deals. DoorDash’s commitment to fast, reliable, and convenient delivery has made it a preferred choice for food and essentials, enhancing urban lifestyle and accessibility.",
+    "size": 160,
+    "reviews": 8000000,
+    "ratingAvg": 4.5,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 1200000 },
+      { "name": "5 star", "count": 5850000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/xOKbvDt362x1uzW-nnggP-PgO9HM4L1vwBl5HgHFHy_n1X3mqeBtOSoIyNJzTS3rrj70=w240-h480-rw",
+    "title": "PayPal",
+    "companyName": "PayPal Mobile",
+    "id": 25,
+    "description": "PayPal is a secure and versatile digital payment platform that enables users to send and receive money, shop online, and manage transactions conveniently. The app supports multiple currencies, bank accounts, and credit cards, providing seamless financial transactions globally. Users can track payment history, send invoices, and make purchases with enhanced security through fraud protection and encryption. PayPal also offers integration with online merchants, mobile wallets, and subscription services, simplifying e-commerce experiences. The platform’s user-friendly interface, instant transfers, and buyer protection features make it an essential tool for individuals and businesses, fostering trust and efficiency in digital financial interactions worldwide.",
+    "size": 150,
+    "reviews": 10000000,
+    "ratingAvg": 4.6,
+    "downloads": 700000000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 250000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 2200000 },
+      { "name": "5 star", "count": 6800000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/9jcxRm8DMqox-b1VwJclSwgZrDBiqSKiy_POHGmx6xSkiwvxrljh0U_2ZRtrUDOZaHo",
+    "title": "TikTok Lite",
+    "companyName": "ByteDance",
+    "id": 26,
+    "description": "TikTok Lite is a streamlined version of the popular TikTok app, designed for users with limited storage and data availability. It provides core functionalities such as browsing short videos, following creators, liking and sharing content, and engaging in trends, all while consuming fewer resources. The app ensures smooth performance on low-end devices and slower network connections, making the TikTok experience accessible to a wider audience. TikTok Lite retains the platform’s creativity-driven approach, offering filters, music, and interactive content without the heavier features of the full app. By balancing performance, accessibility, and entertainment, TikTok Lite brings the",
+    "size": 75,
+    "reviews": 6000000,
+    "ratingAvg": 4.4,
+    "downloads": 400000000,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 900000 },
+      { "name": "5 star", "count": 4450000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/mwTU9-4NX-_QlATb6lILSinKI47wAtOM38GjPYRPQSsQOG2hVRY4h9OfEhDxpf8ADQ",
+    "title": "Shazam",
+    "companyName": "Apple Inc.",
+    "id": 27,
+    "description": "Shazam is a music identification app that allows users to discover songs playing around them instantly. By listening to a short audio clip, Shazam identifies the track, artist, album, and lyrics, providing seamless access to music discovery. Users can explore trending charts, share discoveries with friends, and connect with streaming platforms to play or save identified tracks. Shazam also supports offline recognition, ensuring music can be identified even without an internet connection. The app’s intuitive interface, fast processing, and extensive database make it a go-to tool for music enthusiasts, providing an enjoyable and interactive way to explore and enjoy music from around the world.",
+    "size": 120,
+    "reviews": 7000000,
+    "ratingAvg": 4.7,
+    "downloads": 300000000,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 350000 },
+      { "name": "4 star", "count": 900000 },
+      { "name": "5 star", "count": 5500000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/b1-MIBjlMD9kvl0Okeglm9BL9ejRpOXMio303W0tiLb8Ul5WuVzBDoDKgGRcALOsCdw=w240-h480-rw",
+    "title": "Dropbox",
+    "companyName": "Dropbox, Inc.",
+    "id": 28,
+    "description": "Dropbox is a cloud storage and collaboration platform that allows users to store, manage, and share files securely from anywhere. It supports various file types, including documents, photos, videos, and presentations, and enables real-time collaboration with team members. Users can organize files into folders, access them across multiple devices, and recover deleted content when necessary. Dropbox also integrates with productivity tools, offering workflow automation, document scanning, and commenting features for enhanced team collaboration. The platform’s security measures, including encryption and two-factor authentication, ensure data safety, while its user-friendly interface simplifies file management. Dropbox combines convenience, reliability, and collaborative functionality, making it a preferred solution for personal and professional digital storage needs.",
+    "size": 200,
+    "reviews": 9000000,
+    "ratingAvg": 4.5,
+    "downloads": 400000000,
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 1700000 },
+      { "name": "5 star", "count": 6450000 }
+    ]
+  }
+]
