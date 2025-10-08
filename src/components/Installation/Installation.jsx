@@ -32,7 +32,7 @@ const Installation = () => {
       }
     };
     data();
-  }, []);
+  }, [install]);
 
   const handelSort = (e) => {
     if (e.target.value === 'Low - High') {
@@ -64,10 +64,10 @@ const Installation = () => {
         <div className="max-w-32 w-full relative">
           <select
             onChange={handelSort}
-            defaultValue="Pick a color"
+            defaultValue="Sort By Size"
             className="select"
           >
-            <option disabled={true}>Pick a color</option>
+            <option disabled={true}>Sort By Size</option>
             <option>Low - High</option>
             <option>High - Low</option>
           </select>

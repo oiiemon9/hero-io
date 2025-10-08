@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import DownloadImg from '../../../assets/icon-downloads.png';
 import RatingImg from '../../../assets/icon-ratings.png';
+import { InstallContext } from '../../../GlobalProvider/GlobalProvider';
 
 const Item = ({ data }) => {
-  const { image, title, downloads, reviews, size } = data;
+  const { handelUninstall } = useContext(InstallContext);
+  const { image, title, downloads, reviews, size, id } = data;
 
   return (
     <div className="bg-white p-4 rounded shadow flex items-center justify-between">
@@ -33,7 +35,12 @@ const Item = ({ data }) => {
         </div>
       </div>
       <div className="">
-        <button className="btn btn-accent text-white">Uninstall</button>
+        <button
+          onClick={() => handelUninstall(id)}
+          className="btn btn-accent text-white"
+        >
+          Uninstall
+        </button>
       </div>
     </div>
   );
