@@ -34,6 +34,21 @@ const Installation = () => {
     data();
   }, []);
 
+  const handelSort = (e) => {
+    if (e.target.value === 'Low - High') {
+      const lowToHigh = [...installedApp].sort(
+        (a, b) => a.downloads - b.downloads
+      );
+
+      setInstalledApp(lowToHigh);
+    } else if (e.target.value === 'High - Low') {
+      const lowToHigh = [...installedApp].sort(
+        (a, b) => b.downloads - a.downloads
+      );
+      setInstalledApp(lowToHigh);
+    }
+  };
+
   return (
     <div className="max-w-[1440px] mx-auto px-2 my-20">
       <div className="text-center space-y-4">
@@ -46,12 +61,16 @@ const Installation = () => {
         <h6 className="text-xl font-bold">
           ({installedApp.length}) Apps Found
         </h6>
-        <div className="max-w-72 w-full relative">
-          <input
-            type="search"
-            placeholder="Search Apps "
-            className="input ps-10 w-full"
-          />
+        <div className="max-w-32 w-full relative">
+          <select
+            onChange={handelSort}
+            defaultValue="Pick a color"
+            className="select"
+          >
+            <option disabled={true}>Pick a color</option>
+            <option>Low - High</option>
+            <option>High - Low</option>
+          </select>
         </div>
       </div>
       {loader ? (
