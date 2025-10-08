@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import { Link, useParams } from 'react-router';
 import Loader from '../Loader/Loader';
+import DownloadImg from '../../assets/icon-downloads.png';
+import RatingImg from '../../assets/icon-ratings.png';
+import ReviewImg from '../../assets/icon-review.png';
+import Description from './Description/Description';
+import RatingsChart from './RatingsChart/RatingsChart';
 
 const AppInfo = () => {
   const id = useParams().id;
@@ -8,7 +13,17 @@ const AppInfo = () => {
   const [appInfo, setAppInfo] = useState('');
   const [err, setErr] = useState('');
   const [loaderStatus, setLoaderStatus] = useState(true);
-  const { image, title, companyName } = appInfo;
+  const {
+    image,
+    title,
+    companyName,
+    downloads,
+    reviews,
+    ratingAvg,
+    size,
+    description,
+    ratings,
+  } = appInfo;
   useEffect(() => {
     setLoaderStatus(true);
     const data = async () => {
@@ -36,10 +51,10 @@ const AppInfo = () => {
         <div>
           {err && <p>{err.message}</p>}
           <div className="flex items-center gap-10">
-            <div>
-              <img className="w-[350px]" src={image} alt="" />
+            <div className="w-[350px]">
+              <img className="w-full" src={image} alt="" />
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex-1 space-y-5">
               <div>
                 <h2 className="text-2xl font-semibold">{title}</h2>
                 <p className="text-slate-600">
@@ -49,12 +64,43 @@ const AppInfo = () => {
                   </span>
                 </p>
               </div>
-              <hr className="text-gray-300" />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              velit ullam voluptas iure temporibus blanditiis deserunt provident
-              sequi! Totam saepe molestias, fugit officiis accusamus
-              consequuntur veniam repellendus officia ab quod.
+              <hr className="text-gray-300 w-full" />
+              <div className="flex gap-5">
+                <div className="space-y-2">
+                  <div>
+                    <img className="w-8" src={DownloadImg} alt="" />
+                  </div>
+                  <p>Downloads</p>
+                  <h2 className="text-xl font-bold">{downloads}</h2>
+                </div>
+                <div className="space-y-2">
+                  <div>
+                    <img className="w-8" src={RatingImg} alt="" />
+                  </div>
+                  <p>Average Ratings</p>
+                  <h2 className="text-xl font-bold">{ratingAvg}</h2>
+                </div>
+                <div className="space-y-2">
+                  <div>
+                    <img className="w-8" src={ReviewImg} alt="" />
+                  </div>
+                  <p>Total Reviews</p>
+                  <h2 className="text-xl font-bold">{reviews}</h2>
+                </div>
+              </div>
+              <div>
+                <Link className="btn btn-accent text-white text-l">
+                  Install Now ({size} MB)
+                </Link>
+              </div>
             </div>
+          </div>
+          <hr className="my-10 text-gray-300"></hr>
+          <div>
+            <RatingsChart ratings={ratings}></RatingsChart>
+          </div>
+          <div>
+            <Description description={description}></Description>
           </div>
         </div>
       )}
