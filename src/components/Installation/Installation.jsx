@@ -77,9 +77,9 @@ const Installation = () => {
       {loader ? (
         <Loader></Loader>
       ) : installedApp.length ? (
-        <div className="mt-10 flex flex-col gap-5">
+        <div className="flex flex-col gap-5">
           {installedApp.map((data, i) => (
-            <Item key={i} data={data}></Item>
+            <Item key={i} data={data} installedApp={installedApp}></Item>
           ))}
         </div>
       ) : (

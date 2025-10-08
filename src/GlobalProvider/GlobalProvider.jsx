@@ -4,17 +4,20 @@ import {
   getLocalInstallData,
   removeLocalInstallData,
 } from '../utils/LocalStorage/LocalStorage';
+import { toast } from 'react-toastify';
 
 export const InstallContext = createContext();
 
 const GlobalProvider = ({ children }) => {
   const [install, setInstall] = useState([]);
-  const handelInstall = (id) => {
+  const handelInstall = (id, title) => {
+    toast.success(`Yahhoo 🎉 ${title} Installed Successfully`);
     const newData = [...install, id];
     setInstall(newData);
     addLocalInstallData(id);
   };
-  const handelUninstall = (id) => {
+  const handelUninstall = (id, title) => {
+    toast(`${title} un-Installed from your Device`);
     const installedData = install.filter((data) => parseInt(data) !== id);
     setInstall(installedData);
     removeLocalInstallData(id);

@@ -53,6 +53,7 @@ const Apps = () => {
             onChange={handelSearch}
             type="search"
             placeholder="Search Apps "
+            defaultValue={search}
             className="input ps-10 w-full"
           />
           <div className="absolute top-0 bottom-0 left-3 flex items-center z-1">
@@ -65,9 +66,19 @@ const Apps = () => {
       ) : (
         <div>
           {appData.length === 0 && (
-            <h4 className="text-center text-4xl font-bold text-gray-500">
-              No Apps Found
-            </h4>
+            <div>
+              <h4 className="text-center text-4xl font-bold text-gray-500">
+                No Apps Found
+              </h4>
+              <div className="flex justify-center mt-10">
+                <Link
+                  onClick={() => setSearch('')}
+                  className="btn text-white bg-[linear-gradient(160deg,rgba(99,46,227,1)_0%,rgba(159,98,242,1)_100%)] px-10"
+                >
+                  Show All Apps
+                </Link>
+              </div>
+            </div>
           )}
           <div className=" grid grid-cols-4 gap-5">
             {appData.map((application, i) => (

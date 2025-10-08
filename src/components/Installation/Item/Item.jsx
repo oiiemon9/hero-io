@@ -1,17 +1,43 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import DownloadImg from '../../../assets/icon-downloads.png';
 import RatingImg from '../../../assets/icon-ratings.png';
 import { InstallContext } from '../../../GlobalProvider/GlobalProvider';
 
-const Item = ({ data }) => {
+const Item = ({ data, installedApp }) => {
   const { handelUninstall } = useContext(InstallContext);
   const { image, title, downloads, reviews, size, id } = data;
+  const [downloadFormate, setDownloadFormat] = useState('');
+  const [reviewsFormate, setReviewsFormat] = useState('');
+
+  useEffect(() => {
+    const dow = formetNumber(downloads);
+    const rev = formetNumber(reviews);
+    setDownloadFormat(dow);
+    setReviewsFormat(rev);
+  }, [installedApp]);
+
+  const formetNumber = (number) => {
+    if (number >= 1_000_000_000) {
+      return (number / 1_000_000_000).toFixed(1).replace(/\.0$/, '') + 'B';
+    }
+    if (number >= 1_000_000) {
+      return (number / 1_000_000).toFixed(1).replace(/\.0$/, '') + 'M';
+    }
+    if (number >= 1_000) {
+      return (number / 1_000).toFixed(1).replace(/\.0$/, '') + 'K';
+    }
+    return number.toString();
+  };
 
   return (
     <div className="bg-white p-4 rounded shadow flex items-center justify-between">
       <div className="flex items-center gap-4">
         <div className="h-20 w-20">
-          <img className="h-full w-full rounded-2xl" src={image} alt="" />
+          <img
+            className="h-full w-full object-cover rounded-2xl"
+            src={image}
+            alt=""
+          />
         </div>
         <div className="space-y-2">
           <h4 className="text-lg font-semibold">{title}</h4>
@@ -20,13 +46,13 @@ const Item = ({ data }) => {
               <div>
                 <img className="w-5" src={DownloadImg} alt="" />
               </div>
-              <p>{downloads}</p>
+              <p>{downloadFormate}</p>
             </div>
             <div className="flex items-center gap-1">
               <div>
                 <img className="w-5" src={RatingImg} alt="" />
               </div>
-              <p>{reviews}</p>
+              <p>{reviewsFormate}</p>
             </div>
             <div className="flex items-center gap-1">
               <p>{size} MB</p>
@@ -36,7 +62,7 @@ const Item = ({ data }) => {
       </div>
       <div className="">
         <button
-          onClick={() => handelUninstall(id)}
+          onClick={() => handelUninstall(id, title)}
           className="btn btn-accent text-white"
         >
           Uninstall

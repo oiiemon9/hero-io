@@ -19,6 +19,8 @@ const AppInfo = () => {
   const [loaderStatus, setLoaderStatus] = useState(true);
   const [isInstalled, setIsInstalled] = useState(false);
   const { install, setInstall, handelInstall } = useContext(InstallContext);
+  const [downloadFormate, setDownloadFormate] = useState('');
+  const [reviewsFormate, setEeviewsFormate] = useState('');
   const {
     image,
     title,
@@ -40,6 +42,10 @@ const AppInfo = () => {
 
         if (appInfoData.length !== 0) {
           setAppInfo(appInfoData);
+          const download = formetNumber(appInfoData.downloads);
+          const reviews = formetNumber(appInfoData.reviews);
+          setDownloadFormate(download);
+          setEeviewsFormate(reviews);
         }
       } catch (error) {
         setErr(error);
@@ -49,6 +55,7 @@ const AppInfo = () => {
     };
     data();
   }, []);
+
   useEffect(() => {
     const alreadyInstalled = install.some(
       (item) => parseInt(id) === parseInt(item)
@@ -56,6 +63,19 @@ const AppInfo = () => {
     console.log(alreadyInstalled);
     setIsInstalled(alreadyInstalled);
   }, [install]);
+
+  const formetNumber = (number) => {
+    if (number >= 1_000_000_000) {
+      return (number / 1_000_000_000).toFixed(1).replace(/\.0$/, '') + 'B';
+    }
+    if (number >= 1_000_000) {
+      return (number / 1_000_000).toFixed(1).replace(/\.0$/, '') + 'M';
+    }
+    if (number >= 1_000) {
+      return (number / 1_000).toFixed(1).replace(/\.0$/, '') + 'K';
+    }
+    return number.toString();
+  };
 
   return (
     <div className="max-w-[1440px] mx-auto px-2 my-20">
@@ -88,31 +108,31 @@ const AppInfo = () => {
                         <img className="w-8" src={DownloadImg} alt="" />
                       </div>
                       <p>Downloads</p>
-                      <h2 className="text-xl font-bold">{downloads}</h2>
+                      <h2 className="text-2xl font-bold">{downloadFormate}</h2>
                     </div>
                     <div className="space-y-2">
                       <div>
                         <img className="w-8" src={RatingImg} alt="" />
                       </div>
                       <p>Average Ratings</p>
-                      <h2 className="text-xl font-bold">{ratingAvg}</h2>
+                      <h2 className="text-2xl font-bold">{ratingAvg}</h2>
                     </div>
                     <div className="space-y-2">
                       <div>
                         <img className="w-8" src={ReviewImg} alt="" />
                       </div>
                       <p>Total Reviews</p>
-                      <h2 className="text-xl font-bold">{reviews}</h2>
+                      <h2 className="text-2xl font-bold">{reviewsFormate}</h2>
                     </div>
                   </div>
                   <div>
-                    <Link
-                      onClick={() => handelInstall(id)}
+                    <button
+                      onClick={() => handelInstall(id, title)}
                       disabled={isInstalled}
                       className="btn btn-accent text-white text-l"
                     >
-                      {isInstalled ? 'installed' : `Install Now (${size} MB)`}
-                    </Link>
+                      {isInstalled ? 'Installed' : `Install Now (${size} MB)`}
+                    </button>
                   </div>
                 </div>
               </div>
