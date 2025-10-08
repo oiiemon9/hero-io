@@ -30,7 +30,7 @@ const Chart = ({ ratings }) => {
         >
           <CartesianGrid stroke="#f5f5f5" />
           <XAxis type="number" />
-          <YAxis dataKey="name" type="category" scale="band" />
+          <YAxis dataKey="name" type="category" />
           <Tooltip />
           <Legend />
 

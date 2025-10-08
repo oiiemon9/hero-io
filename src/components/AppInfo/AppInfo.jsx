@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router';
 import Loader from '../Loader/Loader';
 import DownloadImg from '../../assets/icon-downloads.png';
@@ -6,13 +6,16 @@ import RatingImg from '../../assets/icon-ratings.png';
 import ReviewImg from '../../assets/icon-review.png';
 import Description from './Description/Description';
 import RatingsChart from './RatingsChart/RatingsChart';
+import { InstallContext } from '../../GlobalProvider/GlobalProvider';
+import { CgLaptop } from 'react-icons/cg';
 
 const AppInfo = () => {
   const id = useParams().id;
-  //   console.log(id);
   const [appInfo, setAppInfo] = useState('');
   const [err, setErr] = useState('');
   const [loaderStatus, setLoaderStatus] = useState(true);
+  const [isInstalled, setIsInstalled] = useState(false);
+  const { install, setInstall, handelInstall } = useContext(InstallContext);
   const {
     image,
     title,
@@ -41,7 +44,13 @@ const AppInfo = () => {
     };
     data();
   }, []);
-  console.log(appInfo);
+  useEffect(() => {
+    const alreadyInstalled = install.some(
+      (item) => parseInt(id) === parseInt(item)
+    );
+    console.log(alreadyInstalled);
+    setIsInstalled(alreadyInstalled);
+  }, [install]);
 
   return (
     <div className="max-w-[1440px] mx-auto px-2 my-20">
@@ -89,8 +98,12 @@ const AppInfo = () => {
                 </div>
               </div>
               <div>
-                <Link className="btn btn-accent text-white text-l">
-                  Install Now ({size} MB)
+                <Link
+                  onClick={() => handelInstall(id)}
+                  disabled={isInstalled}
+                  className="btn btn-accent text-white text-l"
+                >
+                  {isInstalled ? 'installed' : `Install Now (${size} MB)`}
                 </Link>
               </div>
             </div>
