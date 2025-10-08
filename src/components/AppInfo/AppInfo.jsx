@@ -8,10 +8,13 @@ import Description from './Description/Description';
 import RatingsChart from './RatingsChart/RatingsChart';
 import { InstallContext } from '../../GlobalProvider/GlobalProvider';
 import { CgLaptop } from 'react-icons/cg';
+import AppErrorPage from './AppErrorPage/AppErrorPage';
 
 const AppInfo = () => {
   const id = useParams().id;
+
   const [appInfo, setAppInfo] = useState('');
+
   const [err, setErr] = useState('');
   const [loaderStatus, setLoaderStatus] = useState(true);
   const [isInstalled, setIsInstalled] = useState(false);
@@ -35,7 +38,9 @@ const AppInfo = () => {
         const res = await dataFetch.json();
         const appInfoData = res.find((app) => app.id === parseInt(id));
 
-        setAppInfo(appInfoData);
+        if (appInfoData.length !== 0) {
+          setAppInfo(appInfoData);
+        }
       } catch (error) {
         setErr(error);
       } finally {
@@ -58,63 +63,68 @@ const AppInfo = () => {
         <Loader></Loader>
       ) : (
         <div>
-          {err && <p>{err.message}</p>}
-          <div className="flex items-center gap-10">
-            <div className="w-[350px]">
-              <img className="w-full" src={image} alt="" />
-            </div>
-            <div className="flex-1 space-y-5">
+          {err ? (
+            <AppErrorPage></AppErrorPage>
+          ) : (
+            <div>
+              <div className="flex items-center gap-10">
+                <div className="w-[350px]">
+                  <img className="w-full" src={image} alt="" />
+                </div>
+                <div className="flex-1 space-y-5">
+                  <div>
+                    <h2 className="text-2xl font-semibold">{title}</h2>
+                    <p className="text-slate-600">
+                      Developed by{' '}
+                      <span className="bg-gradient-to-l from-[#9F62F2] to-[#632EE3] bg-clip-text text-transparent font-bold">
+                        {companyName}
+                      </span>
+                    </p>
+                  </div>
+                  <hr className="text-gray-300 w-full" />
+                  <div className="flex gap-5">
+                    <div className="space-y-2">
+                      <div>
+                        <img className="w-8" src={DownloadImg} alt="" />
+                      </div>
+                      <p>Downloads</p>
+                      <h2 className="text-xl font-bold">{downloads}</h2>
+                    </div>
+                    <div className="space-y-2">
+                      <div>
+                        <img className="w-8" src={RatingImg} alt="" />
+                      </div>
+                      <p>Average Ratings</p>
+                      <h2 className="text-xl font-bold">{ratingAvg}</h2>
+                    </div>
+                    <div className="space-y-2">
+                      <div>
+                        <img className="w-8" src={ReviewImg} alt="" />
+                      </div>
+                      <p>Total Reviews</p>
+                      <h2 className="text-xl font-bold">{reviews}</h2>
+                    </div>
+                  </div>
+                  <div>
+                    <Link
+                      onClick={() => handelInstall(id)}
+                      disabled={isInstalled}
+                      className="btn btn-accent text-white text-l"
+                    >
+                      {isInstalled ? 'installed' : `Install Now (${size} MB)`}
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <hr className="my-10 text-gray-300"></hr>
               <div>
-                <h2 className="text-2xl font-semibold">{title}</h2>
-                <p className="text-slate-600">
-                  Developed by{' '}
-                  <span className="bg-gradient-to-l from-[#9F62F2] to-[#632EE3] bg-clip-text text-transparent font-bold">
-                    {companyName}
-                  </span>
-                </p>
-              </div>
-              <hr className="text-gray-300 w-full" />
-              <div className="flex gap-5">
-                <div className="space-y-2">
-                  <div>
-                    <img className="w-8" src={DownloadImg} alt="" />
-                  </div>
-                  <p>Downloads</p>
-                  <h2 className="text-xl font-bold">{downloads}</h2>
-                </div>
-                <div className="space-y-2">
-                  <div>
-                    <img className="w-8" src={RatingImg} alt="" />
-                  </div>
-                  <p>Average Ratings</p>
-                  <h2 className="text-xl font-bold">{ratingAvg}</h2>
-                </div>
-                <div className="space-y-2">
-                  <div>
-                    <img className="w-8" src={ReviewImg} alt="" />
-                  </div>
-                  <p>Total Reviews</p>
-                  <h2 className="text-xl font-bold">{reviews}</h2>
-                </div>
+                <RatingsChart ratings={ratings}></RatingsChart>
               </div>
               <div>
-                <Link
-                  onClick={() => handelInstall(id)}
-                  disabled={isInstalled}
-                  className="btn btn-accent text-white text-l"
-                >
-                  {isInstalled ? 'installed' : `Install Now (${size} MB)`}
-                </Link>
+                <Description description={description}></Description>
               </div>
             </div>
-          </div>
-          <hr className="my-10 text-gray-300"></hr>
-          <div>
-            <RatingsChart ratings={ratings}></RatingsChart>
-          </div>
-          <div>
-            <Description description={description}></Description>
-          </div>
+          )}
         </div>
       )}
     </div>

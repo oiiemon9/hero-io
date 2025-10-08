@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import { InstallContext } from '../../GlobalProvider/GlobalProvider';
 import Item from './Item/Item';
 import Loader from '../Loader/Loader';
+import { TriangleAlert } from 'lucide-react';
 
 const Installation = () => {
   const { install, setInstall, handelInstall } = useContext(InstallContext);
@@ -75,22 +76,18 @@ const Installation = () => {
       </div>
       {loader ? (
         <Loader></Loader>
-      ) : (
+      ) : installedApp.length ? (
         <div className="mt-10 flex flex-col gap-5">
           {installedApp.map((data, i) => (
             <Item key={i} data={data}></Item>
           ))}
         </div>
+      ) : (
+        <div className="flex flex-col items-center justify-center py-10 text-gray-600">
+          <TriangleAlert size={100} />
+          <p className="text-2xl">No Installed App Found</p>
+        </div>
       )}
-
-      <div className="flex justify-center mt-10">
-        <Link
-          to="/apps"
-          className="btn text-white bg-[linear-gradient(160deg,rgba(99,46,227,1)_0%,rgba(159,98,242,1)_100%)] px-10"
-        >
-          Show All
-        </Link>
-      </div>
     </div>
   );
 };
