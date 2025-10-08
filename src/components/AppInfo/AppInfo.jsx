@@ -1,78 +1,60 @@
 import React, { useEffect, useState } from 'react';
-import TrandingApp from '../Home/TrandingAppsSection/TrandingApp';
-import { Link } from 'react-router';
+import { useParams } from 'react-router';
 import Loader from '../Loader/Loader';
-import { CiSearch } from 'react-icons/ci';
 
-const Apps = () => {
-  const [appData, setAppData] = useState([]);
-  const [loader, setLoader] = useState(true);
-  const [err, setErr] = useState();
-  const [search, setSearch] = useState('');
-
+const AppInfo = () => {
+  const id = useParams().id;
+  //   console.log(id);
+  const [appInfo, setAppInfo] = useState('');
+  const [err, setErr] = useState('');
+  const [loaderStatus, setLoaderStatus] = useState(true);
+  const { image, title, companyName } = appInfo;
   useEffect(() => {
-    setLoader(true);
+    setLoaderStatus(true);
     const data = async () => {
       try {
         const dataFetch = await fetch('/appData.json');
         const res = await dataFetch.json();
-        if (search) {
-          const searchData = res.filter((data) =>
-            data.title.toLowerCase().includes(search)
-          );
-          setAppData(searchData);
-        } else {
-          setAppData(res);
-        }
+        const appInfoData = res.find((app) => app.id === parseInt(id));
+
+        setAppInfo(appInfoData);
       } catch (error) {
         setErr(error);
       } finally {
-        setLoader(false);
+        setLoaderStatus(false);
       }
     };
     data();
-  }, [search]);
-
-  const handelSearch = (e) => {
-    const searchValue = e.target.value;
-    setSearch(searchValue.trim().toLowerCase());
-  };
+  }, []);
+  console.log(appInfo);
 
   return (
     <div className="max-w-[1440px] mx-auto px-2 my-20">
-      <div className="text-center space-y-4">
-        <h4 className="text-4xl font-bold">Our All Applications</h4>
-        <p className="text-slate-600">
-          Explore All Apps on the Market developed by us. We code for Millions
-        </p>
-      </div>
-      <div className="my-5 flex justify-between">
-        <h6 className="text-xl font-bold">( {appData.length} ) Apps Found</h6>
-        <div className="max-w-72 w-full relative">
-          <input
-            onChange={handelSearch}
-            type="search"
-            placeholder="Search Apps "
-            className="input ps-10 w-full"
-          />
-          <div className="absolute top-0 bottom-0 left-3 flex items-center z-1">
-            <CiSearch className="text-xl" />
-          </div>
-        </div>
-      </div>
-      {loader ? (
+      {loaderStatus ? (
         <Loader></Loader>
       ) : (
         <div>
-          {appData.length === 0 && (
-            <h4 className="text-center text-4xl font-bold text-gray-500">
-              No Apps Found
-            </h4>
-          )}
-          <div className=" grid grid-cols-4 gap-5">
-            {appData.map((application, i) => (
-              <TrandingApp key={i} application={application}></TrandingApp>
-            ))}
+          {err && <p>{err.message}</p>}
+          <div className="flex items-center gap-10">
+            <div>
+              <img className="w-[350px]" src={image} alt="" />
+            </div>
+            <div className="flex flex-col gap-4">
+              <div>
+                <h2 className="text-2xl font-semibold">{title}</h2>
+                <p className="text-slate-600">
+                  Developed by{' '}
+                  <span className="bg-gradient-to-l from-[#9F62F2] to-[#632EE3] bg-clip-text text-transparent font-bold">
+                    {companyName}
+                  </span>
+                </p>
+              </div>
+              <hr className="text-gray-300" />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              velit ullam voluptas iure temporibus blanditiis deserunt provident
+              sequi! Totam saepe molestias, fugit officiis accusamus
+              consequuntur veniam repellendus officia ab quod.
+            </div>
           </div>
         </div>
       )}
@@ -80,7 +62,7 @@ const Apps = () => {
   );
 };
 
-export default Apps;
+export default AppInfo;
 
 // {
 //   "image": "https://play-lh.googleusercontent.com/6MtUcsS5i95q92P6NbHTGzJT6hs6cJANaMHXfW5nco5_hDOnF1AC3A5lgH3Ik3MARAry",

@@ -13,8 +13,8 @@ const TrandingAppsSection = ({ appData }) => {
         </p>
       </div>
       <div className="mt-10 grid grid-cols-4 gap-5">
-        {trending.map((application) => (
-          <TrandingApp application={application}></TrandingApp>
+        {trending.map((application, i) => (
+          <TrandingApp key={i} application={application}></TrandingApp>
         ))}
       </div>
       <div className="flex justify-center mt-10">

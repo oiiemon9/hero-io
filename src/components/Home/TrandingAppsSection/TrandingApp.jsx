@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Download from './../../../assets/icon-downloads.png';
 import RatingImg from './../../../assets/icon-ratings.png';
+import { Link } from 'react-router';
 
 const App = ({ application }) => {
-  const { image, title, downloads, ratingAvg } = application;
+  const { image, title, downloads, ratingAvg, id } = application;
   const [downloadFormat, setDownloadFormat] = useState('');
 
   useEffect(() => {
@@ -28,7 +29,10 @@ const App = ({ application }) => {
   }, []);
 
   return (
-    <div className="bg-base-100 shadow-sm p-4 rounded-xl">
+    <Link
+      to={`/app/${id}`}
+      className="bg-base-100 shadow-sm p-4 rounded-xl hover:-translate-y-3 transition duration-300 ease-in-out"
+    >
       <div className="flex items-center justify-center">
         <figure className="h-[316px] max-w-[316px] w-full">
           <img
@@ -50,7 +54,7 @@ const App = ({ application }) => {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
