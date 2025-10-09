@@ -87,11 +87,11 @@ const AppInfo = () => {
             <AppErrorPage></AppErrorPage>
           ) : (
             <div>
-              <div className="flex items-center gap-10">
-                <div className="w-[350px]">
+              <div className="flex flex-col md:flex-row items-center gap-10">
+                <div className="max-w-[350px]">
                   <img className="w-full" src={image} alt="" />
                 </div>
-                <div className="flex-1 space-y-5">
+                <div className=" w-full space-y-10">
                   <div>
                     <h2 className="text-2xl font-semibold">{title}</h2>
                     <p className="text-slate-600">
@@ -102,7 +102,7 @@ const AppInfo = () => {
                     </p>
                   </div>
                   <hr className="text-gray-300 w-full" />
-                  <div className="flex gap-5">
+                  <div className="flex flex-wrap gap-5">
                     <div className="space-y-2">
                       <div>
                         <img className="w-8" src={DownloadImg} alt="" />

@@ -41,13 +41,15 @@ const Apps = () => {
   return (
     <div className="max-w-[1440px] mx-auto px-2 my-20">
       <div className="text-center space-y-4">
-        <h4 className="text-4xl font-bold">Our All Applications</h4>
+        <h4 className="text-2xl md:text-4xl font-bold">Our All Applications</h4>
         <p className="text-slate-600">
           Explore All Apps on the Market developed by us. We code for Millions
         </p>
       </div>
-      <div className="my-5 flex justify-between">
-        <h6 className="text-xl font-bold">( {appData.length} ) Apps Found</h6>
+      <div className="my-5 flex justify-between items-center gap-5">
+        <h6 className="text-xl font-bold text-nowrap">
+          ( {appData.length} ) Apps Found
+        </h6>
         <div className="max-w-72 w-full relative">
           <input
             onChange={handelSearch}
@@ -80,7 +82,7 @@ const Apps = () => {
               </div>
             </div>
           )}
-          <div className=" grid grid-cols-4 gap-5">
+          <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
             {appData.map((application, i) => (
               <TrandingApp key={i} application={application}></TrandingApp>
             ))}
