@@ -8,18 +8,16 @@ const App = ({ application }) => {
   const [downloadFormat, setDownloadFormat] = useState('');
 
   useEffect(() => {
-    if (downloads >= 1_000_000_000) {
-      const formate =
-        (downloads / 1_000_000_000).toFixed(1).replace(/\.0$/, '') + 'B';
+    if (downloads >= 1000000000) {
+      const formate = (downloads / 1000000000).toFixed(1) + 'B';
       setDownloadFormat(formate);
       return;
-    } else if (downloads >= 1_000_000) {
-      const formate =
-        (downloads / 1_000_000).toFixed(1).replace(/\.0$/, '') + 'M';
+    } else if (downloads >= 1000000) {
+      const formate = (downloads / 1000000).toFixed(1) + 'M';
       setDownloadFormat(formate);
       return;
-    } else if (downloads >= 1_000) {
-      const formate = (downloads / 1_000).toFixed(1).replace(/\.0$/, '') + 'K';
+    } else if (downloads >= 1000) {
+      const formate = (downloads / 1000).toFixed(1) + 'K';
       setDownloadFormat(formate);
       return;
     } else {
@@ -46,11 +44,11 @@ const App = ({ application }) => {
         <div className="flex justify-between mt-5">
           <div className="flex items-center gap-2 px-2 py-1 bg-green-50 rounded-lg border border-gray-200">
             <img className="w-4" src={Download} alt="" />
-            <p>{downloadFormat}</p>
+            <p className="text-green-600">{downloadFormat}</p>
           </div>
           <div className="flex items-center gap-2 px-2 py-1 bg-yellow-50 rounded-lg border border-gray-200">
             <img className="w-4" src={RatingImg} alt="" />
-            <p>{ratingAvg}</p>
+            <p className="text-yellow-600">{ratingAvg}</p>
           </div>
         </div>
       </div>

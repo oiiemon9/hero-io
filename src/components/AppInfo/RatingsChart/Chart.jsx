@@ -34,7 +34,7 @@ const Chart = ({ ratings }) => {
           <Tooltip />
           <Legend />
 
-          <Bar dataKey="count" barSize={20} fill="#FF8811" />
+          <Bar dataKey="count" barSize={20} fill="#632EE3" />
         </ComposedChart>
       </ResponsiveContainer>
     </div>

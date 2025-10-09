@@ -8,17 +8,21 @@ const Hero = () => {
   return (
     <div className=" max-w-[1440px] mx-auto px-2 mt-20">
       <div className="flex flex-col items-center text-center gap-5">
-        <h1 className="text-6xl font-bold">
+        <h1 className="text-4xl md:text-6xl font-bold">
           We Build <br />{' '}
           <span className="bg-gradient-to-l from-[#9F62F2] to-[#632EE3] bg-clip-text text-transparent">
             Productive
           </span>{' '}
           Apps
         </h1>
-        <p className="text-slate-600 max-w-[750px]">
-          At HERO.IO , we craft innovative apps designed to make everyday life
-          simpler, smarter, and more exciting. Our goal is to turn your ideas
-          into digital experiences that truly make an impact.
+        <p className="text-slate-600 max-w-[750px] italic">
+          At{' '}
+          <span className="bg-gradient-to-l from-[#9F62F2] to-[#632EE3] bg-clip-text text-transparent font-semibold">
+            HERO.IO
+          </span>
+          , we craft innovative apps designed to make everyday life simpler,
+          smarter, and more exciting. Our goal is to turn your ideas into
+          digital experiences that truly make an impact.
         </p>
         <div className="flex gap-2">
           <Link

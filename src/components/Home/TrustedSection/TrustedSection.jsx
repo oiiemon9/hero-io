@@ -8,7 +8,7 @@ const TrustedSection = () => {
           <h2 className="text-center text-4xl font-bold text-white">
             Trusted by Millions, Built for You
           </h2>
-          <div className="flex justify-evenly gap-2 text-white">
+          <div className="flex justify-evenly gap-5 flex-wrap text-white">
             <div className="text-center space-y-2">
               <h6 className="text-sm">Total Downloads</h6>
               <h4 className="text-5xl font-bold">29.6M</h4>

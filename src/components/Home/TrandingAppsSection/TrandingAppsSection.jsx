@@ -12,7 +12,7 @@ const TrandingAppsSection = ({ appData }) => {
           Explore All Trending Apps on the Market developed by us
         </p>
       </div>
-      <div className="mt-10 grid grid-cols-4 gap-5">
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
         {trending.map((application, i) => (
           <TrandingApp key={i} application={application}></TrandingApp>
         ))}

@@ -17,14 +17,14 @@ const Item = ({ data, installedApp }) => {
   }, [installedApp]);
 
   const formetNumber = (number) => {
-    if (number >= 1_000_000_000) {
-      return (number / 1_000_000_000).toFixed(1).replace(/\.0$/, '') + 'B';
+    if (number >= 1000000000) {
+      return (number / 1000000000).toFixed(1) + 'B';
     }
-    if (number >= 1_000_000) {
-      return (number / 1_000_000).toFixed(1).replace(/\.0$/, '') + 'M';
+    if (number >= 1000000) {
+      return (number / 1000000).toFixed(1) + 'M';
     }
-    if (number >= 1_000) {
-      return (number / 1_000).toFixed(1).replace(/\.0$/, '') + 'K';
+    if (number >= 1000) {
+      return (number / 1000).toFixed(1) + 'K';
     }
     return number.toString();
   };
@@ -46,13 +46,13 @@ const Item = ({ data, installedApp }) => {
               <div>
                 <img className="w-5" src={DownloadImg} alt="" />
               </div>
-              <p>{downloadFormate}</p>
+              <p className="text-green-600">{downloadFormate}</p>
             </div>
             <div className="flex items-center gap-1">
               <div>
                 <img className="w-5" src={RatingImg} alt="" />
               </div>
-              <p>{reviewsFormate}</p>
+              <p className="text-yellow-600">{reviewsFormate}</p>
             </div>
             <div className="flex items-center gap-1">
               <p>{size} MB</p>
