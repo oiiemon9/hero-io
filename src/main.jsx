@@ -34,7 +34,7 @@ const router = createBrowserRouter([
         Component: AppInfo,
       },
       {
-        path: '/*',
+        path: '*',
         element: <Error404></Error404>,
       },
     ],
