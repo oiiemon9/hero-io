@@ -76,18 +76,21 @@ const Installation = () => {
       </div>
       {loader ? (
         <Loader></Loader>
-      ) : installedApp.length ? (
+      ) : (
         <div className="flex flex-col gap-5">
           {installedApp.map((data, i) => (
             <Item key={i} data={data} installedApp={installedApp}></Item>
           ))}
         </div>
-      ) : (
+      )}
+      {/* {!installedApp.length && loader !== true ? (
         <div className="flex flex-col items-center justify-center py-10 text-gray-600">
           <TriangleAlert size={100} />
           <p className="text-2xl">No Installed App Found</p>
         </div>
-      )}
+      ) : (
+        ''
+      )} */}
     </div>
   );
 };

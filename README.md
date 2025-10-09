@@ -1,16 +1,11 @@
-# React + Vite
+# HERO .IO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hero.io is a next-generation app hub — we build creative mobile apps and bring you the most popular apps from trusted developers around the world.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+On this website we work on various types of apps. On this website our popular apps are uploaded and provided to users. Our apps are helpful to people and are made beautifully. We have been doing this work for many years and we achieved success very quickly. About 1M or more people use our website every day.
 
-## React Compiler
+## Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Our website is fully built with React. We’ve used modern technologies such as HTML5, CSS3, Tailwind CSS, Vite, and React to ensure high performance and a smooth user experience.
