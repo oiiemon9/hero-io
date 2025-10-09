@@ -59,7 +59,7 @@ const Installation = () => {
         </p>
       </div>
       <div className="my-5 flex justify-between">
-        <h6 className="text-xl font-bold">
+        <h6 className="text-xl font-bold text-nowrap">
           ({installedApp.length}) Apps Found
         </h6>
         <div className="max-w-32 w-full relative">

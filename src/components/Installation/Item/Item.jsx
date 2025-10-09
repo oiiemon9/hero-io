@@ -30,9 +30,9 @@ const Item = ({ data, installedApp }) => {
   };
 
   return (
-    <div className="bg-white p-4 rounded shadow flex items-center justify-between">
+    <div className="bg-white p-4 rounded shadow md:flex items-center justify-between">
       <div className="flex items-center gap-4">
-        <div className="h-20 w-20">
+        <div className="h-16 w-16 sm:h-20 sm:w-20">
           <img
             className="h-full w-full object-cover rounded-2xl"
             src={image}
@@ -41,7 +41,7 @@ const Item = ({ data, installedApp }) => {
         </div>
         <div className="space-y-2">
           <h4 className="text-lg font-semibold">{title}</h4>
-          <div className="flex items-center gap-5 text-slate-600">
+          <div className="flex items-center gap-5 text-slate-600 flex-wrap">
             <div className="flex items-center gap-1">
               <div>
                 <img className="w-5" src={DownloadImg} alt="" />
@@ -60,7 +60,7 @@ const Item = ({ data, installedApp }) => {
           </div>
         </div>
       </div>
-      <div className="">
+      <div className="flex justify-end">
         <button
           onClick={() => handelUninstall(id, title)}
           className="btn btn-accent text-white"
