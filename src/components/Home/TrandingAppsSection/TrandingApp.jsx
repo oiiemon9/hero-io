@@ -28,7 +28,7 @@ const App = ({ application }) => {
 
   return (
     <Link
-      to={`/app/${id}`}
+      to={`/apps/${id}`}
       className="bg-base-100 shadow-sm p-4 rounded-xl hover:-translate-y-3 transition duration-300 ease-in-out"
     >
       <div className="flex items-center justify-center">

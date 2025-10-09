@@ -30,7 +30,7 @@ const router = createBrowserRouter([
         Component: Installation,
       },
       {
-        path: '/app/:id',
+        path: '/apps/:id',
         Component: AppInfo,
       },
       {
